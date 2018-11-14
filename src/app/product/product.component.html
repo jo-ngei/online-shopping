@@ -1,0 +1,22 @@
+<section class="card">
+    <div class="container-fluid">
+        <div class="pd-name">
+            <p>{{name}}</p>
+        </div>
+        <div class="pd-image">
+            <img id="product-image" src="{{product.imageUrl}}" alt="">
+        </div>
+        <div class="pd-description">
+            <p id="product-description">{{description}}</p>
+        </div>
+        <div class="pd-categories">
+            <span id="product-categories" *ngFor="let category of product.categories; let i=index">
+                        <a href="#">{{category}}</a>
+                        <span>{{i < categories.length - 1 ? '>' : ''}} </span>
+            </span>
+        </div>
+        <div class="pd-price">
+            <p id="product-price">{{price}}</p>
+        </div>
+    </div>
+</section>
