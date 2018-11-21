@@ -9,9 +9,11 @@ import { ProductComponent } from './product/product.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { CategoryComponent } from './category/category.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AboutsComponent } from './abouts/abouts.component';
+import { LatestsComponent } from './latests/latests.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,9 +23,11 @@ import { NavigationComponent } from './navigation/navigation.component';
     NewProductComponent,
     ProductListComponent,
     CategoriesComponent,
-    CategoryComponent,
     CarouselComponent,
     NavigationComponent,
+    AboutsComponent,
+    LatestsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

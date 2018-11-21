@@ -20,11 +20,20 @@ export class ProductComponent implements OnInit {
 
   ngOnInit() {
     this.name = this.product._name;
-    this.description = this.product._description;
     this.categories = this.product._categories;
     this.imageUrl =  this.product._imageUrl;
     this.price = this.product._price;
 
+    this.setDescription();
+
+  }
+
+  setDescription() {
+    if (this.product._description.length > 150) {
+      this.description = this.product._description.substring(0, 150) + '...';
+    } else {
+      this.description = this.product._description;
+    }
   }
 
 }
