@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
-import { NewProductComponent } from './new-product/new-product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -20,7 +19,6 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     ProductComponent,
-    NewProductComponent,
     ProductListComponent,
     CategoriesComponent,
     CarouselComponent,
